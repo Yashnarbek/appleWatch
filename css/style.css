@@ -1,0 +1,232 @@
+*{
+    box-sizing: border-box;
+    list-style-type: none;
+}
+body{
+    margin: 0;
+    font-family: "Roboto", "Arial", sans-serif;
+}
+
+@font-face {
+    font-family: "Roboto";
+    font-weight: 400;
+    src: 
+         url("../fonts/roboto-v30-latin-regular.woff2") format("woff2"),
+         url("../fonts/roboto-v30-latin-regular.woff") format("woff");
+  }
+  @font-face {
+    font-family: "Roboto";
+    font-weight: 700;
+    src:
+         url("../fonts/roboto-v30-latin-700.woff2") format("woff2"),
+         url("../fonts/roboto-v30-latin-700.woff") format("woff"); 
+  }
+
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+
+header{
+    padding-top: 35px;
+}
+.container {
+    width: 1140px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.header-inner {
+    display: flex;
+    align-items: center;
+}
+.logo {
+    display: inline-block;
+    margin-right: auto;
+}
+.logo-img {
+    display: block;
+}
+.header-list {
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+.header-list-item {
+    padding-bottom: 6px;
+    padding-left: 0;
+    margin-right: 30px;
+    border-bottom: 2px solid #ffffff;
+}
+.header-list-item:hover {
+    border-bottom-color: #333333;
+}
+.header-item-link {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 150%;
+    text-align: center;
+    color: #333333;
+}
+.form-box {
+    margin-left: 10px;
+}
+.search-input {
+    width: 158px;
+    padding-bottom: 6px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #333333;
+}
+.search-input::placeholder {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 150%;
+    text-align: center;
+    color: #666666;
+}
+
+
+.hero-section {
+    background-image: url("../images/intro-bg.png");
+    background-repeat: no-repeat;
+    background-position: calc(50% + 580px) calc(50% + 40px);
+    border-bottom: 1px solid #DDDDDD;
+}
+
+.hero-box {
+    width: 450px;
+    padding-top: 180px;
+    padding-bottom: 200px;
+}
+.hero-heading {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 120%;
+    color: #000000;
+}
+.hero-title {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-left: 40px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #777777;
+    border-left: 3px solid #888888;
+
+}
+.hero-link {
+    padding: 12px 30px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    background-color: #EA625C;
+    color: #ffffff;
+    text-decoration: none;
+}
+.hero-link:hover {
+    background-color: #C9514C;
+}
+
+.about-section {
+}
+
+.about-list {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    width: 1100px;
+    padding-top: 70px;
+    padding-bottom: 140px;
+    padding-left: 0;
+}
+.about-item {
+    padding-left: 0;
+    width: 300px;
+    margin-right: 80px;
+}
+.about-item:last-child {
+    margin-right: 0;
+}
+.about-heading {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    text-transform: uppercase;
+    color: #222222;
+}
+.about-title {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    color: #333333;
+}
+.dots-box {
+    display: flex;
+}
+.dots {
+    width: 8px;
+    height: 8px;
+    margin-right: 10px;
+    background-color: #DDDDDD;
+}
+.learn-more {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 160%;
+    text-transform: uppercase;
+    color: #EA625C;
+}
+.learn-more::before {
+    margin-right: 10px;
+    content: "";
+    display: inline-block;
+    width: 40px;
+    height: 2px;
+    background-color: #EA625C;
+}
+.learn-more:hover::before {
+    width: 60px;
+    transition: 0.5s;
+}
+
+.spots-band-inner {
+    padding-top: 0;
+    display: flex;
+    justify-content: space-between;
+}
+.spots-band-box {
+    padding-top: 100px;
+}
+
+.control {
+    background-image: url("../images/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: calc(50%) calc(50%);
+}
+.control-box {
+    margin-left: auto;
+}
+.control-heading {
+    color: #FFFFFF;
+
+}
+.control-title {
+    color: #FFFFFF;
+}
